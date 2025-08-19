@@ -1,211 +1,247 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 :root {
-    --verde: #A6CE39;
-    --azul: #0095DA;
-    --amarelo: #FFCB04;
-    --rosa: #F6ADCD;
-    --roxo: #6B4E7B;
-    --font-color: #08385E;
+  --verde: #a6ce39;
+  --azul: #0095da;
+  --amarelo: #ffcb04;
+  --rosa: #f6adcd;
+  --roxo: #6b4e7b;
+  --font-color: #08385e;
 
-    --col-space-gap: 0.5rem;
-    --col-space-1: 2rem;
-    --col-space-2: 7rem;
+  --col-space-gap: 0.5rem;
+  --col-space-1: 2rem;
+  --col-space-2: 7rem;
 
-    --row-space-gap: 0.5rem;
-    --row-space-1: 2rem;
-    --row-space-2: 7rem;
-
+  --row-space-gap: 0.5rem;
+  --row-space-1: 2rem;
+  --row-space-2: 7rem;
 }
 
 .parent {
-    display: grid;
-    /* Correto */
-    grid-template-columns: var(--col-space-1) var(--col-space-1) var(--col-space-1) var(--col-space-1) var(--col-space-1) var(--col-space-1) var(--col-space-gap) var(--col-space-1) var(--col-space-gap) var(--col-space-1) var(--col-space-gap) var(--col-space-1) var(--col-space-gap) var(--col-space-2) var(--col-space-2) var(--col-space-2) var(--col-space-gap) var(--col-space-2) var(--col-space-2) var(--col-space-2) var(--col-space-2) var(--col-space-2) var(--col-space-2) var(--col-space-2);
-    grid-template-rows: var(--row-space-1) var(--row-space-gap) var(--row-space-1) var(--row-space-gap) var(--row-space-1) var(--row-space-gap) var(--row-space-1) var(--row-space-gap) var(--row-space-1) 14rem var(--row-space-gap) var(--row-space-1) var(--row-space-2) var(--row-space-2) var(--row-space-2) var(--row-space-gap) var(--row-space-2) var(--row-space-gap) var(--row-space-1) var(--row-space-gap) var(--row-space-1) var(--row-space-2) var(--row-space-2) var(--row-space-2);
+  display: grid;
+  /* Correto */
+  grid-template-columns:
+    var(--col-space-1) var(--col-space-1) var(--col-space-1)
+    var(--col-space-1) var(--col-space-1) var(--col-space-1) var(
+      --col-space-gap
+    )
+    var(--col-space-1) var(--col-space-gap) var(--col-space-1) var(
+      --col-space-gap
+    )
+    var(--col-space-1) var(--col-space-gap) var(--col-space-2) var(
+      --col-space-2
+    )
+    var(--col-space-2) var(--col-space-gap) var(--col-space-2) var(
+      --col-space-2
+    )
+    var(--col-space-2) var(--col-space-2) var(--col-space-2) var(--col-space-2)
+    var(--col-space-2);
+  grid-template-rows:
+    var(--row-space-1) var(--row-space-gap) var(--row-space-1) var(
+      --row-space-gap
+    )
+    var(--row-space-1) var(--row-space-gap) var(--row-space-1) var(
+      --row-space-gap
+    )
+    var(--row-space-1) 14rem var(--row-space-gap) var(--row-space-1) var(
+      --row-space-2
+    )
+    var(--row-space-2) var(--row-space-2) var(--row-space-gap) var(
+      --row-space-2
+    )
+    var(--row-space-gap) var(--row-space-1) var(--row-space-gap) var(
+      --row-space-1
+    )
+    var(--row-space-2) var(--row-space-2) var(--row-space-2);
 
-    /* height: 100vh; */
-    color: var(--font-color);
+  /* height: 100vh; */
+  color: var(--font-color);
 }
 
 .verde1 {
-    grid-column: span 13 / span 13;
+  grid-column: span 13 / span 13;
 }
 
 .verde2 {
-    grid-column: span 11 / span 11;
-    grid-row: span 9 / span 9;
-    grid-column-start: 14;
-    grid-row-start: 2;
+  grid-column: span 11 / span 11;
+  grid-row: span 9 / span 9;
+  grid-column-start: 14;
+  grid-row-start: 2;
 }
 
 .verde3 {
-    grid-column: span 11 / span 11;
-    grid-row: span 1 / span 1;
-    grid-column-start: 14;
-    grid-row-start: 1;
+  grid-column: span 11 / span 11;
+  grid-row: span 1 / span 1;
+  grid-column-start: 14;
+  grid-row-start: 1;
 }
 
 .azul1 {
-    /* display: flex; */
-    grid-column: span 11 / span 11;
-    grid-row-start: 3;
-
+  /* display: flex; */
+  grid-column: span 11 / span 11;
+  grid-row-start: 3;
 }
 
 .azul2 {
-    grid-row: span 9 / span 9;
-    grid-column-start: 12;
-    grid-row-start: 3;
+  grid-row: span 9 / span 9;
+  grid-column-start: 12;
+  grid-row-start: 3;
 }
 
 .azul3 {
-    grid-column: span 13 / span 13;
-    grid-row: span 1 / span 1;
-    grid-column-start: 12;
-    grid-row-start: 12;
+  grid-column: span 13 / span 13;
+  grid-row: span 1 / span 1;
+  grid-column-start: 12;
+  grid-row-start: 12;
 }
 
 .azul4 {
-    grid-column: span 13 / span 13;
-    grid-row: span 5 / span 5;
-    grid-column-start: 12;
-    grid-row-start: 13;
+  grid-column: span 13 / span 13;
+  grid-row: span 5 / span 5;
+  grid-column-start: 12;
+  grid-row-start: 13;
 }
 
 .amarelo1 {
-    grid-column: span 10 / span 10;
-    grid-column-start: 1;
-    grid-row-start: 5;
+  grid-column: span 10 / span 10;
+  grid-column-start: 1;
+  grid-row-start: 5;
 }
 
 .amarelo2 {
-    grid-row: span 15 / span 15;
-    grid-column-start: 10;
-    grid-row-start: 5;
+  grid-row: span 15 / span 15;
+  grid-column-start: 10;
+  grid-row-start: 5;
 }
 
 .amarelo3 {
-    grid-column: span 5 / span 14;
-    grid-column-start: 11;
-    grid-row-start: 19;
+  grid-column: span 5 / span 14;
+  grid-column-start: 11;
+  grid-row-start: 19;
 
-    background-color: var(--amarelo);
+  background-color: var(--amarelo);
 }
 
 .amarelo4 {
-    grid-column: span 5 / span 7;
-    grid-row: span 5 / span 5;
-    grid-column-start: 18;
-    grid-row-start: 20;
+  grid-column: span 5 / span 7;
+  grid-row: span 5 / span 5;
+  grid-column-start: 18;
+  grid-row-start: 20;
 }
 
 .rosa1 {
-    grid-column: span 6 / span 8;
-    grid-column-start: 1;
-    grid-row-start: 7;
+  grid-column: span 6 / span 8;
+  grid-column-start: 1;
+  grid-row-start: 7;
 }
 
 .rosa2 {
-    grid-row: span 14 / span 14;
-    grid-column-start: 8;
-    grid-row-start: 7;
+  grid-row: span 14 / span 14;
+  grid-column-start: 8;
+  grid-row-start: 7;
 }
 
 .rosa3 {
-    grid-column: span 9 / span 9;
-    grid-row: span 4 / span 4;
-    grid-column-start: 8;
-    grid-row-start: 21;
+  grid-column: span 9 / span 9;
+  grid-row: span 4 / span 4;
+  grid-column-start: 8;
+  grid-row-start: 21;
 }
 
 .rosa4 {
-    grid-row: span 1 / span 1;
-    grid-row-start: 21;
-    grid-column: span 9 / span 9;
-    grid-column-start: 8;
+  grid-row: span 1 / span 1;
+  grid-row-start: 21;
+  grid-column: span 9 / span 9;
+  grid-column-start: 8;
 }
 
 .roxo1 {
-    grid-column: span 6 / span 6;
-    grid-column-start: 1;
-    grid-row-start: 9;
-
+  grid-column: span 6 / span 6;
+  grid-column-start: 1;
+  grid-row-start: 9;
 }
 
 .roxo2 {
-    grid-row: span 12 / span 12;
-    grid-column-start: 6;
-    grid-row-start: 9;
+  grid-row: span 12 / span 12;
+  grid-column-start: 6;
+  grid-row-start: 9;
 }
 
 .roxo3 {
-    grid-column: span 5 / span 5;
-    grid-column-start: 2;
-    grid-row: span 3 / span 3;
-    grid-row-start: 22;
+  grid-column: span 5 / span 5;
+  grid-column-start: 2;
+  grid-row: span 3 / span 3;
+  grid-row-start: 22;
 }
 
 .roxo4 {
-    grid-row: span 1 / span 1;
-    grid-row-start: 21;
-    grid-column: span 5 / span 5;
-    grid-column-start: 2;
+  grid-row: span 1 / span 1;
+  grid-row-start: 21;
+  grid-column: span 5 / span 5;
+  grid-column-start: 2;
 }
 
 .verde {
-    background-color: var(--verde);
-    display: flex;
+  background-color: var(--verde);
+  display: flex;
 }
 
 .azul {
-    background-color: var(--azul);
+  background-color: var(--azul);
 }
 
 .amarelo {
-    background-color: var(--amarelo);
+  background-color: var(--amarelo);
 }
 
 .rosa {
-    background-color: var(--rosa);
+  background-color: var(--rosa);
 }
 
 .roxo {
-    background-color: var(--roxo);
+  background-color: var(--roxo);
 }
 
 .titulo {
-    display: flex;
+  display: flex;
 
-    h1 {
-        font-size: 16px;
-        color: var(--font-color);
-        height: 100%;
-        margin: 0;
-        background-color: #fff;
-        padding-right: 10px;
-        text-transform: uppercase;
-    }
+  h1 {
+    font-size: 16px;
+    color: var(--font-color);
+    height: 100%;
+    margin: 0;
+    background-color: #fff;
+    padding-right: 10px;
+    text-transform: uppercase;
+  }
 }
 
+.header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  h1 {
+    font-size: 1.5rem;
+    color: #fff;
+  }
+}
 
 .verde1-barra {
-    background: var(--verde);
-    width: 85%;
-    height: 1.5rem;
+  background: var(--verde);
+  width: 85%;
+  height: 1.5rem;
 }
 
 .azul-caminho1 {
-    height: 100%;
-    background-color: var(--azul);
+  height: 100%;
+  background-color: var(--azul);
 }
 
-
 .radiografia-barra {
-    background-color: var(--azul);
-    width: 100%;
+  background-color: var(--azul);
+  width: 100%;
 }

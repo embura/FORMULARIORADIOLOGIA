@@ -1,37 +1,38 @@
 import "./Servicos.css";
 
 const Titulo = () => {
-    return (<>
-        <h1>Serviços</h1>
+  return (
+    <>
+      <h1>Serviços</h1>
     </>
-    );
-}
+  );
+};
 
 const Coluna = () => {
-    return (<></>);
-}
+  return <></>;
+};
 
 const Header = () => {
-    return (
-        <div className="header">
-
-        </div>
-    );
-}
+  return (
+    <>
+      <h1>Serviços</h1>
+    </>
+  );
+};
 
 const Main = () => {
-    return (
-        <div id="servicos">
-            <main></main>
-        </div>
-    );
-}
+  return (
+    <div id="servicos">
+      <main></main>
+    </div>
+  );
+};
 
 const Servicos = {
-    Titulo,
-    Coluna,
-    Header,
-    Main,
-}
+  Titulo,
+  Coluna,
+  Header,
+  Main,
+};
 
 export default Servicos;

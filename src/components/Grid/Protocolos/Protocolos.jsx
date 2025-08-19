@@ -1,39 +1,37 @@
 import "./Protocolos.css";
 
 const Titulo = () => {
-    return (
-        <>
-            <h1>Protocolos</h1>
-        </>
-    );
-}
+  return (
+    <>
+      <h1>Protocolos</h1>
+    </>
+  );
+};
 
 const Coluna = () => {
-    return (<></>);
-}
+  return <></>;
+};
 
 const Header = () => {
-    return (
-        <div className="header">
-
-        </div>
-    );
-}
+  return (
+    <>
+      <h1>Protocolos</h1>
+    </>
+  );
+};
 const Main = () => {
-    return (
-        <div id="protocolos">
-            <header></header>
-            <main></main>
-
-
-        </div>
-    );
-}
+  return (
+    <div id="protocolos">
+      <header></header>
+      <main></main>
+    </div>
+  );
+};
 const Protocolos = {
-    Titulo,
-    Coluna,
-    Header,
-    Main,
-}
+  Titulo,
+  Coluna,
+  Header,
+  Main,
+};
 
 export default Protocolos;

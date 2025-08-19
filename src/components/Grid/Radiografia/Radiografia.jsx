@@ -1,40 +1,38 @@
 import "./Radiografia.css";
 
 const Titulo = () => {
-    return (
-        <>
-            <h1>Radiografias</h1>
-        </>
-    );
-}
+  return (
+    <>
+      <h1>Radiografias</h1>
+    </>
+  );
+};
 
 const Coluna = () => {
-    return (<></>);
-}
+  return <></>;
+};
 
 const Header = () => {
-    return (
-        <div className="header">
-
-        </div>
-    );
-}
+  return (
+    <>
+      <h1>Radiografia</h1>
+    </>
+  );
+};
 
 const Main = () => {
-    return (
-        <div id="radiografia">
-            <div className="main">
-                test
-            </div>
-        </div>
-    );
-}
+  return (
+    <div id="radiografia">
+      <div className="main">test</div>
+    </div>
+  );
+};
 
 const Radiografia = {
-    Titulo,
-    Coluna,
-    Header,
-    Main,
-}
+  Titulo,
+  Coluna,
+  Header,
+  Main,
+};
 
 export default Radiografia;
