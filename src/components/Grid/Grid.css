@@ -63,7 +63,9 @@
 }
 
 .verde1 {
-  grid-column: span 13 / span 13;
+  grid-column: span 14 / span 14;
+  grid-column-start: 1;
+  grid-row-start: 1;
 }
 
 .verde2 {
@@ -81,9 +83,9 @@
 }
 
 .azul1 {
-  /* display: flex; */
-  grid-column: span 11 / span 11;
+  grid-column: span 11 / span 12;
   grid-row-start: 3;
+  grid-column-start: 1;
 }
 
 .azul2 {
@@ -119,11 +121,9 @@
 }
 
 .amarelo3 {
-  grid-column: span 5 / span 14;
-  grid-column-start: 11;
+  grid-column: span 15 / span 15;
+  grid-column-start: 10;
   grid-row-start: 19;
-
-  background-color: var(--amarelo);
 }
 
 .amarelo4 {
