@@ -8,7 +8,6 @@ import Servicos from "./components/Grid/Servicos/Servicos";
 
 const App = () => {
   return (
-    <div>
       <Grid
         tomografia={Tomografia}
         radiografia={Radiagrafia}
@@ -16,7 +15,6 @@ const App = () => {
         protocolos={Protocolos}
         servicos={Servicos}
       />
-    </div>
   );
 };
 
