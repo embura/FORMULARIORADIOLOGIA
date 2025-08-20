@@ -13,7 +13,7 @@
   --font-color: #08385e;
 
   --col-space-gap: 0.5rem;
-  --col-space-1: 2rem;
+  --col-space-1: 1fr;
   --col-space-2: 7rem;
 
   --row-space-gap: 0.5rem;
